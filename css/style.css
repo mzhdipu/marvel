@@ -1,0 +1,1227 @@
+/******* Features icon color *****/
+/*
+.fa-lock{background-color:$iconColor1;}
+.fa-microphone{background-color:$iconColor2;}
+.fa-laptop{background-color:$iconColor3;}
+.fa-lightbulb-o{background-color:$iconColor4;}
+.fa-link{background-color:$iconColor5;}
+.fa-bell-o{background-color:$iconColor6;}
+.fa-cog{background-color:$iconColor7;}
+.fa-paper-plane{background-color:$iconColor8;}
+.fa-camera{background-color:$iconColor9;}*/
+/*.aboutEnllaxText{
+  position: absolute;
+  top: -100px;
+  left: 557px;
+  z-index: -1;
+  h1{
+    @include sectionShadowText;
+
+  }
+}*/
+/*
+<div class="expertEnllaxText text-center">
+<h1 data-enllax-ratio="1.5" data-enllax-type="foreground">Expert</h1>
+</div>*/
+/****
+===================================================
+           for paragraph text
+===================================================
+****/
+/****
+===================================================
+           for all section Shadow Text
+===================================================
+****/
+/****
+===================================================
+        for All section main Tittle Text
+===================================================
+****/
+/****
+===================================================
+           for primary Button
+===================================================
+****/
+/****
+===================================================
+        for secondary Button
+===================================================
+****/
+/****
+===================================================
+         for all button hover effect
+===================================================
+****/
+/****
+===================================================
+      for simple image parallax effect bg
+===================================================
+****/
+/****
+===================================================
+    for multi browser transition effect
+===================================================
+****/
+/* preloader styles
+/* ========================================== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #fff; }
+
+.sk-rotating-plane {
+  width: 40px;
+  height: 40px;
+  background-color: #ffe400;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+  animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+/****
+===========================================================
+               for Banner Section
+===========================================================
+***/
+#banner {
+  position: relative;
+  background-color: #fcfcfc;
+  z-index: -1; }
+  #banner .carousel {
+    margin-top: 230px; }
+    #banner .carousel h2 {
+      font-weight: 900;
+      font-size: 45px;
+      text-transform: uppercase; }
+    #banner .carousel p {
+      font-size: 13px;
+      color: #757575;
+      font-weight: normal;
+      font-family: Myriad Pro;
+      margin: 60px 0 25px; }
+    #banner .carousel .carousel-indicators {
+      position: absolute;
+      top: 350px;
+      left: 48px; }
+      #banner .carousel .carousel-indicators li {
+        background-color: #e3e3e3;
+        width: 25px;
+        height: 5px;
+        border: none; }
+      #banner .carousel .carousel-indicators .active {
+        background-color: #444444; }
+    #banner .carousel .btn-danger {
+      border: 1px solid #444444;
+      font-size: 16px;
+      color: #444444;
+      padding: 20px 45px;
+      background-color: #fcfcfc;
+      text-transform: uppercase;
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s; }
+      #banner .carousel .btn-danger:hover {
+        background-color: #ffe400;
+        color: #000000;
+        border: none; }
+  #banner figure {
+    margin-top: 75px; }
+  #banner .bannerEnllax .enllaxImg01 {
+    top: 206px;
+    left: 120px;
+    position: absolute;
+    z-index: -1;
+    /*opacity: 0.7;*/ }
+  #banner .bannerEnllax .enllaxImg02 {
+    position: absolute;
+    top: 450px;
+    left: 750px;
+    z-index: -1; }
+  #banner .bannerEnllax .enllaxImg03 {
+    position: absolute;
+    top: 20px;
+    right: -135px;
+    height: 550px;
+    z-index: -1; }
+
+/****
+===========================================================
+              Fro Menu Section
+===========================================================
+***/
+.stick {
+  position: fixed;
+  top: 0px;
+  z-index: 999999999999;
+  width: 100%; }
+
+.custom-navbar {
+  background: #000000;
+  border: none;
+  margin-bottom: 0;
+  text-align: center; }
+  .custom-navbar .navbar-nav {
+    margin: 0 0 0 125px; }
+  .custom-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 11px; }
+    .custom-navbar .navbar-brand .navbar-toggle {
+      background: #ffa400;
+      padding: 4px 6px;
+      font-size: 16px;
+      color: #fff;
+      border: none; }
+      .custom-navbar .navbar-brand .navbar-toggle .icon-bar {
+        background: #ffa400;
+        border-color: transparent; }
+  .custom-navbar .nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px; }
+    .custom-navbar .nav li a:hover {
+      background: transparent;
+      color: #FFE401;
+      border-bottom: 1px solid #FFE401; }
+    .custom-navbar .nav li a:focus {
+      background-color: transparent;
+      color: #ffffff;
+      outline: none; }
+  .custom-navbar .nav li.active > a {
+    border-bottom: 2px solid #ffffff; }
+
+@media (min-width: 768px) {
+  .custom-navbar {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+    padding: 16px;
+    background: black; }
+
+  .custom-navbar.top-nav-collapse {
+    padding: 16px;
+    background: #000000;
+    border-bottom: 0; }
+
+  .navbar-toggle .icon-bar {
+    background-color: #fff; } }
+@media (max-width: 767px) {
+  .custom-navbar .nav li.active > a {
+    border-bottom: 2px solid transparent !important;
+    color: #ffa400; } }
+/****
+===========================================================
+              Fro About Section
+===========================================================
+***/
+#about {
+  position: relative;
+  overflow: hidden; }
+  #about #aboutTop {
+    margin: 135px 0 85px;
+    overflow: hidden; }
+    #about #aboutTop h2 {
+      font-weight: bold;
+      color: #444444;
+      font-size: 36px;
+      text-transform: uppercase; }
+    #about #aboutTop div {
+      margin: 40px 0 75px; }
+      #about #aboutTop div p {
+        font-size: 13px;
+        color: #757575;
+        font-weight: normal;
+        font-family: Myriad Pro; }
+    #about #aboutTop .btn-danger {
+      border: none;
+      font-size: 18px;
+      color: #ffe400;
+      padding: 20px 45px;
+      background-color: #000000;
+      margin-right: 40px;
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s; }
+      #about #aboutTop .btn-danger:hover {
+        background-color: #ffe400;
+        color: #000000;
+        border: none; }
+  #about #aboutMiddel .aboutContent {
+    background-color: #212121;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    margin-bottom: 180px; }
+    #about #aboutMiddel .aboutContent p i {
+      color: #ffe400;
+      font-size: 100px;
+      margin: 85px 0 50px; }
+    #about #aboutMiddel .aboutContent h4 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 0 55px 130px; }
+    #about #aboutMiddel .aboutContent:hover {
+      background-color: #ffe400;
+      color: #000000;
+      border: none;
+      color: #ffffff; }
+    #about #aboutMiddel .aboutContent:hover i {
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s;
+      color: #ffffff; }
+  #about #aboutMiddel .awesomFeature {
+    background-color: #212121;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s; }
+    #about #aboutMiddel .awesomFeature p {
+      color: #ffffff; }
+      #about #aboutMiddel .awesomFeature p i {
+        color: #ffe400;
+        font-size: 100px;
+        margin: 50px 0; }
+    #about #aboutMiddel .awesomFeature h4 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      padding: 0 40px; }
+    #about #aboutMiddel .awesomFeature .pbottom {
+      padding: 0 40px 45px; }
+    #about #aboutMiddel .awesomFeature:hover {
+      background-color: #ffe400;
+      color: #000000;
+      border: none;
+      color: #ffffff; }
+    #about #aboutMiddel .awesomFeature:hover i {
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s;
+      color: #ffffff; }
+  #about #aboutBottom h3 {
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px; }
+  #about #aboutBottom .counterUp {
+    margin: 120px 0 151px; }
+    #about #aboutBottom .counterUp p {
+      color: #757575;
+      font-size: 13px;
+      margin: 15px 0 0; }
+    #about #aboutBottom .counterUp h2 {
+      color: #444444;
+      font-size: 40px;
+      position: relative;
+      font-weight: bold; }
+    #about #aboutBottom .counterUp span {
+      color: #444444;
+      font-size: 46px;
+      position: absolute;
+      top: 10px;
+      left: 196px; }
+  #about .aboutEnllax .enllaxImg01 {
+    position: absolute;
+    top: 206px;
+    left: -50px;
+    height: 700px;
+    z-index: -1; }
+  #about .aboutEnllax .enllaxImg02 {
+    position: absolute;
+    top: 63%;
+    right: -15%;
+    z-index: -1; }
+  #about .aboutEnllaxText {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    z-index: -1; }
+    #about .aboutEnllaxText h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: #f0f0f0;
+      font-family: Myriad Pro;
+      text-transform: uppercase; }
+
+/****
+===========================================================
+              Fro Responsive Section
+===========================================================
+***/
+#responsive {
+  background-color: #fafafa;
+  position: relative;
+  overflow: hidden; }
+  #responsive .boostYW {
+    margin: 200px 0 100px;
+    /*position: relative;*/ }
+    #responsive .boostYW h3 {
+      font-weight: bold;
+      color: #444444;
+      font-size: 26px;
+      text-transform: uppercase;
+      margin-bottom: -90px; }
+    #responsive .boostYW p {
+      margin: 60px 0; }
+    #responsive .boostYW ul {
+      margin-left: -40px; }
+      #responsive .boostYW ul li {
+        margin-top: 25px;
+        list-style: none; }
+        #responsive .boostYW ul li i {
+          color: #757575; }
+    #responsive .boostYW .btn-danger {
+      border: 1px solid #444444;
+      font-size: 16px;
+      margin-top: 40px;
+      color: #ffffff;
+      padding: 20px 45px;
+      background-color: #000000;
+      text-transform: uppercase;
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s; }
+      #responsive .boostYW .btn-danger:hover {
+        background-color: #ffe400;
+        color: #000000;
+        border: none; }
+  #responsive figure img {
+    position: absolute;
+    top: 215px;
+    right: -205px; }
+  #responsive .responsiveEnllax .enllaxImg01 {
+    position: absolute;
+    top: 0;
+    left: -70px; }
+  #responsive .responsiveEnllaxText {
+    /* position: absolute;
+     top: 0;
+     left: 0;*/
+    z-index: -1; }
+    #responsive .responsiveEnllaxText h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: #f0f0f0;
+      font-family: Myriad Pro;
+      text-transform: uppercase; }
+
+/****
+===========================================================
+              Fro section Marvel
+===========================================================
+***/
+#marvel {
+  background-image: url("../images/marvel/bg.jpg");
+  /* background-size: cover;
+   background-repeat: no-repeat;*/
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #marvel .overlay {
+    background-color: rgba(63, 63, 62, 0.68);
+    padding: 160px 0 130px; }
+    #marvel .overlay figure figcaption h2 {
+      margin: 40px 0;
+      color: #fdfdfd;
+      font-size: 44px;
+      font-weight: bold;
+      text-transfrom: uppercase; }
+    #marvel .overlay figure figcaption p {
+      color: #ffffff; }
+    #marvel .overlay figure figcaption .btn-danger {
+      border: 1px solid #444444;
+      font-size: 16px;
+      margin-top: 40px;
+      margin-left: 40px;
+      color: #ffffff;
+      padding: 20px 45px;
+      background-color: #000000;
+      text-transform: uppercase;
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s; }
+      #marvel .overlay figure figcaption .btn-danger:hover {
+        background-color: #ffe400;
+        color: #000000;
+        border: none; }
+
+.marvelEnllax {
+  position: absolute;
+  top: 30px;
+  right: -83px; }
+  .marvelEnllax .enllaxImg01 {
+    height: 490px; }
+
+/****
+===========================================================
+             for features section
+===========================================================
+***/
+#features {
+  position: relative;
+  overflow: hidden;
+  padding: 170px 0;
+  background-color: #ffffff;
+  z-index: -1; }
+  #features .featuresWrapper h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #444444;
+    text-transform: uppercase;
+    margin: 0 0 130px 0; }
+  #features .featuresWrapper .featIcon i {
+    width: 66px;
+    border-radius: 50%;
+    height: 65px;
+    font-size: 25px;
+    margin: 0 0 0 -10px;
+    padding: 20px;
+    color: #ffffff; }
+  #features .featuresWrapper .featIcon .fa-lock {
+    background-color: #74C8B8; }
+  #features .featuresWrapper .featIcon .fa-microphone {
+    background-color: #EC768C; }
+  #features .featuresWrapper .featIcon .fa-laptop {
+    background-color: #EBD176; }
+  #features .featuresWrapper .featIcon .fa-lightbulb-o {
+    background-color: #31AAE1; }
+  #features .featuresWrapper .featIcon .fa-link {
+    background-color: #74C8B7; }
+  #features .featuresWrapper .featIcon .fa-bell-o {
+    background-color: #728AC8; }
+  #features .featuresWrapper .featIcon .fa-cog {
+    background-color: #C183D6; }
+  #features .featuresWrapper .featIcon .fa-paper-plane {
+    background-color: #31A9E1; }
+  #features .featuresWrapper .featIcon .fa-camera {
+    background-color: #4AE3A3; }
+  #features .featuresWrapper h4 {
+    font-size: 18px;
+    color: #444444;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+  #features .featuresWrapper p {
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 70px; }
+  #features .featuresEnllaxText {
+    position: absolute;
+    top: 0px;
+    left: 375px;
+    z-index: -1; }
+    #features .featuresEnllaxText h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: #f0f0f0;
+      font-family: Myriad Pro;
+      text-transform: uppercase; }
+
+/****
+===========================================================
+              Fro section Work
+===========================================================
+***/
+#work {
+  padding-top: 150px;
+  background-color: #ffe400;
+  position: relative;
+  overflow: hidden; }
+  #work h2 {
+    font-weight: bold;
+    color: #444444;
+    color: #000000;
+    margin-bottom: 65px;
+    text-transform: uppercase; }
+  #work .controls {
+    margin-bottom: 50px; }
+  #work .col-md-3 {
+    padding: 0; }
+  #work .portfolio {
+    overflow: hidden;
+    position: relative; }
+    #work .portfolio .portfolio-info {
+      background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+      bottom: -50px;
+      height: 50px;
+      left: 0;
+      padding: 15px 0;
+      position: absolute;
+      width: 100%; }
+      #work .portfolio .portfolio-info h3 {
+        color: #444444;
+        font-size: 16px;
+        padding-left: 10px;
+        font-weight: bold;
+        margin-top: 0;
+        text-transform: uppercase; }
+        #work .portfolio .portfolio-info h3 span {
+          color: #757575;
+          font-size: 10px; }
+    #work .portfolio .searching {
+      background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+      border-radius: 25px;
+      bottom: -42px;
+      height: 40px;
+      padding: 10px 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 100px; }
+      #work .portfolio .searching span {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #444444;
+        border-radius: 50%;
+        height: 30px;
+        padding: 7px;
+        width: 30px; }
+        #work .portfolio .searching span:hover {
+          background: #ffe400 none repeat scroll 0 0;
+          transition: all 0.5s ease 0s; }
+    #work .portfolio:hover .portfolio-info {
+      bottom: 0;
+      transition: all 0.9s ease 0s; }
+    #work .portfolio:hover .searching {
+      bottom: 33px;
+      transition: all 0.9s ease 0s; }
+  #work .btn-danger {
+    border: 1px solid #444444;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: #000000;
+    /* padding: 20px 45px;*/
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s; }
+    #work .btn-danger:hover {
+      background-color: #000000;
+      color: #ffffff; }
+  #work .workEnllaxText {
+    position: absolute;
+    top: 0;
+    left: 510px;
+    z-index: 1; }
+    #work .workEnllaxText h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: #f0f0f0;
+      font-family: Myriad Pro;
+      text-transform: uppercase;
+      color: #c1b33f; }
+
+/****
+===========================================================
+              Fro section Service
+===========================================================
+***/
+#service {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 200px;
+  z-index: -1; }
+  #service .serviceRight img {
+    height: 795px;
+    margin-top: 95px; }
+  #service .serviceLeft h2 {
+    margin-bottom: 150px;
+    font-weight: bold;
+    color: #444444;
+    font-size: 30px;
+    text-transform: uppercase; }
+  #service .serviceLeft .cleanDesign i {
+    font-size: 40px;
+    color: #000000; }
+  #service .serviceLeft .cleanDesign h4 {
+    margin: 40px 0;
+    font-weight: bold;
+    color: #444444;
+    font-size: 18px;
+    text-transform: uppercase; }
+  #service .serviceLeft .cleanDesign p {
+    font-size: 16px;
+    color: #757575;
+    padding-bottom: 65px; }
+  #service .serviceLeft .cleanBorder1 {
+    border-bottom: 1px solid #e6e6e6; }
+  #service .serviceLeft .cleanBorder2 {
+    border-left: 1px solid #e6e6e6; }
+  #service .serviceLeft .parallaxEffect i {
+    margin-top: 40px; }
+  #service .serviceLeft .support i {
+    margin-top: 40px; }
+  #service .serviceEnllaxText {
+    position: absolute;
+    top: -100px;
+    left: 155px;
+    z-index: -1; }
+    #service .serviceEnllaxText h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: #f0f0f0;
+      font-family: Myriad Pro;
+      text-transform: uppercase; }
+  #service .serviceEnllax .enllaxImg01 {
+    position: absolute;
+    top: 500px;
+    left: -50px; }
+
+/****
+===========================================================
+              Fro section Pricing
+===========================================================
+***/
+#pricing {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/Pricing/bg.jpg");
+  position: relative;
+  overflow: hidden;
+  z-index: -1; }
+  #pricing .pricingWrapper {
+    padding: 145px 0 100px; }
+    #pricing .pricingWrapper h2 {
+      margin: 0 0 130px 0;
+      font-weight: bold;
+      color: #444444;
+      text-transform: uppercase;
+      color: #000000;
+      font-size: 30px; }
+    #pricing .pricingWrapper .single-pricing {
+      background: #fff none repeat scroll 0 0;
+      margin-top: 100px;
+      position: relative; }
+      #pricing .pricingWrapper .single-pricing .standard {
+        background-image: url("../images/Pricing/img1.jpg");
+        background-position: center center;
+        background-size: cover;
+        padding: 30px 0 42px; }
+        #pricing .pricingWrapper .single-pricing .standard h6, #pricing .pricingWrapper .single-pricing .standard h5, #pricing .pricingWrapper .single-pricing .standard p {
+          color: #ffffff; }
+        #pricing .pricingWrapper .single-pricing .standard h6 {
+          padding-bottom: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 15px; }
+        #pricing .pricingWrapper .single-pricing .standard h5 span {
+          font-size: 60px;
+          font-weight: 500; }
+      #pricing .pricingWrapper .single-pricing .premium {
+        background-image: url("../images/Pricing/img2.jpg"); }
+      #pricing .pricingWrapper .single-pricing .ultimate {
+        background-image: url("../images/Pricing/img3.jpg"); }
+  #pricing .most-popular {
+    background: #e6e6e6 none repeat scroll 0 0;
+    font-weight: bold;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: -25px;
+    width: 100%; }
+  #pricing .single-pricing > ul {
+    list-style: outside none none;
+    padding: 40px 0; }
+  #pricing .single-pricing li {
+    border-bottom: 1px solid #f1f1f1;
+    color: #808080;
+    font-size: 15px;
+    padding: 25px 0; }
+  #pricing .single-pricing li i {
+    font-size: 10px;
+    font-weight: 100; }
+  #pricing .get-started a {
+    color: #444;
+    font-weight: bold; }
+  #pricing .get-started {
+    border-top: 2px solid #f8e32c;
+    padding: 10px 0; }
+    #pricing .get-started a:hover {
+      text-decoration: none; }
+  #pricing .pricingEnllaxText {
+    position: absolute;
+    top: 100px;
+    left: 485px;
+    z-index: -1; }
+    #pricing .pricingEnllaxText h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: #f0f0f0;
+      font-family: Myriad Pro;
+      text-transform: uppercase;
+      color: #c1b33f; }
+
+/****
+===========================================================
+              Fro section Expert
+===========================================================
+***/
+#expert {
+  padding: 200px 0 300px;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  #expert h2 {
+    font-weight: bold;
+    color: #444444;
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 130px;
+    text-transform: uppercase; }
+  #expert .single-expert {
+    position: relative;
+    overflow: hidden; }
+    #expert .single-expert .team-text {
+      background: #ffe400 none repeat scroll 0 0;
+      color: #fff;
+      height: 100%;
+      padding-top: 95px;
+      position: absolute;
+      top: -100%;
+      transition: all 0.9s ease 0s;
+      width: 100%; }
+    #expert .single-expert:hover .team-text {
+      top: 0; }
+    #expert .single-expert .expert-text {
+      background: #ebebeb;
+      padding: 15px; }
+      #expert .single-expert .expert-text h2 {
+        color: #444444;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 5px 0; }
+      #expert .single-expert .expert-text h4 {
+        color: #757575;
+        font-weight: 100; }
+    #expert .single-expert .expert-separator {
+      border-bottom: 2px dashed #b7b7b7; }
+  #expert .expert-text > h4 {
+    color: #757575;
+    font-size: 11px;
+    padding-top: 15px; }
+  #expert .team-text > h2 {
+    color: #000000;
+    font-size: 24px;
+    padding-bottom: 15px; }
+  #expert .team-text > h4 {
+    font-size: 16px;
+    padding-bottom: 50px;
+    color: #000000; }
+  #expert .team-text > p {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 130px;
+    padding: 0 13px;
+    color: #000000; }
+  #expert .team-social i {
+    color: #6b6000;
+    font-size: 22px;
+    margin: 0 10px; }
+  #expert .team-social {
+    border-top: 1px dashed #eee;
+    padding-top: 20px; }
+
+.expertEnllaxText {
+  position: absolute;
+  top: 0;
+  left: 510px;
+  z-index: -1; }
+  .expertEnllaxText h1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: #f0f0f0;
+    font-family: Myriad Pro;
+    text-transform: uppercase; }
+
+/****
+===========================================================
+              Fro impres section
+===========================================================
+***/
+#impress {
+  background-image: url("../images/impress/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #impress figure {
+    padding: 50px 0; }
+    #impress figure figcaption h2 {
+      margin: 40px 0 15px;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: bold;
+      text-transfrom: uppercase; }
+    #impress figure figcaption p {
+      color: #ffffff; }
+    #impress figure figcaption .btn-danger {
+      border: 1px solid #444444;
+      font-size: 16px;
+      margin-top: 40px;
+      margin-left: 20px;
+      color: #ffffff;
+      padding: 20px 45px;
+      background-color: #000000;
+      text-transform: uppercase;
+      transition: all 0.8s;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s; }
+      #impress figure figcaption .btn-danger:hover {
+        background-color: #ffe400;
+        color: #000000;
+        border: none; }
+
+/****
+===========================================================
+             for News Section
+===========================================================
+***/
+#news {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  padding: 180px 0 160px;
+  /* blog_slider_area start */ }
+  #news h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 115px; }
+  #news .single_blog_img {
+    position: relative; }
+  #news .single_blog_img a {
+    position: relative; }
+  #news .single_blog_img a::before {
+    position: absolute;
+    content: "\f04b";
+    background: #FFE400;
+    width: 40px;
+    height: 40px;
+    bottom: 22px;
+    left: 106px;
+    text-align: center;
+    top: 3%;
+    font-family: FontAwesome;
+    color: #000;
+    font-size: 22px;
+    border-radius: 50%;
+    line-height: 39px;
+    transform: translateY(-84%);
+    opacity: 0;
+    transition: .5s;
+    transform: scale(3); }
+  #news .single_blog_img:hover a::before {
+    opacity: 1;
+    transform: scale(1.3); }
+  #news .single_blog_content:hover a {
+    background: #FFE400; }
+  #news .single_blog_content h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 30px; }
+  #news .single_blog_content span {
+    padding: 13px 0 35px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px; }
+  #news .single_blog_content p {
+    font-size: 12px;
+    padding: 0px 31px 20px;
+    text-align: left;
+    color: #757575;
+    font-weight: 400; }
+  #news .single_blog_content a {
+    text-decoration: none;
+    padding: 10px 22px;
+    background: #F9F9F9;
+    border-radius: 23px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block; }
+  #news .blog_title:hover a {
+    background: #FFE400;
+    transition: .3s;
+    cursor: pointer; }
+  #news .blog_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 36%;
+    z-index: 999; }
+  #news .blog_title a {
+    text-decoration: none;
+    padding: 8px 28px;
+    background: #F9F9F9;
+    border-radius: 23px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block; }
+  #news .slider-active .owl-nav div {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 47%;
+    background: linear-gradient(transparent, black);
+    text-align: center;
+    padding: 2px 14px;
+    font-size: 25px;
+    font-weight: 700;
+    transform: translateY(-50%);
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+    line-height: 35px; }
+  #news .slider-active {
+    position: relative; }
+  #news .slider-active .owl-nav > .owl-next {
+    right: 0; }
+
+.newsEnllaxText {
+  position: absolute;
+  top: 100px;
+  left: 495px;
+  z-index: -1; }
+  .newsEnllaxText h1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: #f0f0f0;
+    font-family: Myriad Pro;
+    text-transform: uppercase; }
+
+/****
+===========================================================
+             for Section Contact
+===========================================================
+***/
+#contact {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/contact/bd.jpg");
+  padding: 160px 0 210px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1; }
+  #contact h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: -40px; }
+  #contact form input {
+    height: 55px; }
+  #contact form textarea {
+    height: 500px; }
+  #contact form .btn-danger {
+    border: 1px solid #444444;
+    font-size: 16px;
+    margin-top: 40px;
+    color: #ffffff;
+    padding: 20px 45px;
+    background-color: #000000;
+    text-transform: uppercase;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s; }
+    #contact form .btn-danger:hover {
+      background-color: #ffe400;
+      color: #000000;
+      border: none; }
+
+.err {
+  border-color: #FFE400; }
+
+/****
+===========================================================
+             for Section Footer
+===========================================================
+***/
+#footer {
+  background-color: #212121;
+  padding: 60px 0 65px; }
+  #footer .row_1 {
+    padding-left: 120px; }
+    #footer .row_1 img {
+      padding-left: 55px;
+      padding-bottom: 30px; }
+    #footer .row_1 p {
+      color: #fff;
+      font-size: 13px; }
+  #footer .row_2 {
+    padding-left: 70px;
+    margin-top: -35px; }
+    #footer .row_2 .fa {
+      color: #fff;
+      padding-top: 55px;
+      padding-right: 15px; }
+      #footer .row_2 .fa:hover {
+        color: #ffe400; }
+  #footer .row_3 {
+    padding-left: 120px; }
+    #footer .row_3 img {
+      padding-left: 55px;
+      padding-bottom: 30px; }
+    #footer .row_3 p {
+      color: #fff;
+      font-size: 13px; }
+  #footer .copyRight {
+    color: #ffffff;
+    margin: 115px 0 -21px 0; }
+    #footer .copyRight span {
+      color: #ffe400; }
+
+#footer_down {
+  background-color: #2e2d2d;
+  padding: 15px 0 15px; }
+
+#footer_down p {
+  font-size: 12px; }
+
+/****
+===========================================================
+             for Scroll Up
+===========================================================
+***/
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+.scrollup {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  z-index: 99;
+  text-align: center;
+  color: #fff;
+  background: #FFE401;
+  border-radius: 50%;
+  font-size: 25px;
+  display: none; }
+  .scrollup::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #FFE401;
+    border-radius: 50%;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    -webkit-animation: hvr-ripple-out 1.2s ease-in-out infinite;
+    animation: hvr-ripple-out 1.2s ease-in-out infinite; }
+  .scrollup::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%; }
+  .scrollup i {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #212121; }
+
+/****
+===========================================================
+             ScrollBar
+===========================================================
+***/
+#scrollbubble {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  z-index: 500;
+  padding: 3px 8px;
+  background-color: #000;
+  color: #FFF;
+  border-radius: 3px; }
+  #scrollbubble::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    height: 0;
+    width: 0;
+    margin-top: -4px;
+    border: 4px solid transparent;
+    border-left-color: #000; }
+
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFE401;
+  outline: 1px solid slategrey;
+  border-radius: 20px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,143 @@
+
+/****
+===================================================
+           for paragraph text
+===================================================
+****/
+
+@mixin paragraphText(
+  $font-size: 13px,
+  $color: #757575,
+  $font-weight :normal,
+  $font-family : Myriad Pro
+)
+{
+  font-size: $font-size;
+  color: $color;
+  font-weight: $font-weight;
+  font-family: $font-family;
+}
+
+
+
+/****
+===================================================
+           for all section Shadow Text
+===================================================
+****/
+@mixin sectionShadowText(
+  $font-size: 90px,
+  $font-weight: bold,
+  $color:#f0f0f0,
+  $font-family: Myriad Pro,
+  $text-transform: uppercase
+)
+  {
+    font-size: $font-size;
+    font-weight:  $font-weight;
+    color :  $color;
+    font-family: $font-family;
+    text-transform: $text-transform;
+  }
+
+/****
+===================================================
+        for All section main Tittle Text
+===================================================
+****/
+@mixin sectionTitleText(
+  $font-weight : bold,
+  $color : #444444
+)
+  {
+    font-weight: $font-weight;
+    color : $color;
+  }
+
+
+/****
+===================================================
+           for primary Button
+===================================================
+****/
+@mixin primaryButton(
+  $font-size: 18px,
+  $color:#ffe400
+)
+  {
+    font-zize:$font-size;
+    color : $color;
+  }
+
+/****
+===================================================
+        for secondary Button
+===================================================
+****/
+@mixin secondaryButton(
+  $font-size: 18px,
+  $color:#ffffff,
+  $border : 1px solid #ffffff,
+  $background : transparent
+)
+  {
+    font-zize:$font-size;
+    color : $color;
+    background: $background;
+    border:  $border;
+  }
+
+
+/****
+===================================================
+         for all button hover effect
+===================================================
+****/
+@mixin buttonHoverEffect(
+  $backgroundColor : #ffe400,
+  $color: #000000,
+  $border:none
+)
+  {
+    background-color: $backgroundColor;
+    color: $color;
+    border: $border;
+  }
+
+/****
+===================================================
+      for simple image parallax effect bg
+===================================================
+****/
+@mixin imageBgParallax(
+  $backgroundAttachment : fixed,
+  $backgroundPosition : center,
+  $backgroundRepeat : no-repeat
+)
+  {
+    background-attachment : $backgroundAttachment;
+    background-position : $backgroundPosition;
+    background-repeat : $backgroundRepeat;
+  }
+
+
+
+/****
+===================================================
+    for multi browser transition effect
+===================================================
+****/
+@mixin transitionEffect(
+  $transition: all 0.8s,
+     $webkit-transition: all 0.8s,
+     $moz-transition: all 0.8s,
+     $ms-transition: all 0.8s,
+     $o-transition: all 0.8s
+)
+  {
+  transition: $transition;
+  -webkit-transition: $webkit-transition;
+  -moz-transition:  $moz-transition;
+  -ms-transition:  $ms-transition;
+  -o-transition: $o-transition;
+  }

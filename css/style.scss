@@ -1,0 +1,1395 @@
+
+@import "variable";
+@import "mixin";
+
+
+
+
+/* preloader styles
+/* ========================================== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #fff;
+}
+
+.sk-rotating-plane {
+  width: 40px;
+  height: 40px;
+  background-color: #ffe400;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+  animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+
+
+
+/****
+===========================================================
+               for Banner Section
+===========================================================
+***/
+#banner{
+  position: relative;
+  background-color: $sliderBg;
+  z-index: -1;
+  .carousel{
+    margin-top: 230px;
+
+    h2{
+      font-weight: 900;
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+
+    p{
+      @include paragraphText;
+      margin: 60px 0 25px;
+    }
+    .carousel-indicators{
+      position: absolute;
+      top: 350px;
+      left: 48px;
+
+      li{
+        background-color: #e3e3e3;
+        width: 25px;
+        height: 5px;
+        border: none;
+      }
+      .active{
+        background-color: #444444;
+      }
+    }
+    .btn-danger{
+      border: 1px solid #444444;
+      font-size: 16px;
+      color:#444444;
+      padding: 20px 45px;
+      background-color: #fcfcfc;
+      text-transform: uppercase;
+
+      @include transitionEffect;
+
+      &:hover{
+        @include buttonHoverEffect;
+      }
+    }
+  }
+  figure{
+    margin-top: 75px;
+  }
+
+  .bannerEnllax{
+    .enllaxImg01{
+      top: 206px;
+      left: 120px;
+      position: absolute;
+      z-index: -1;
+      /*opacity: 0.7;*/
+    }
+    .enllaxImg02{
+      position: absolute;
+      top: 450px;
+      left: 750px;
+      z-index: -1;
+    }
+    .enllaxImg03{
+      position: absolute;
+      top: 20px;
+      right: -135px;
+      height: 550px;
+      z-index: -1;
+    }
+  }
+}
+
+
+
+
+
+
+
+/****
+===========================================================
+              Fro Menu Section
+===========================================================
+***/
+
+.stick {
+  position:fixed;
+  top:0px;
+  z-index:999999999999;
+  width:100%
+}
+
+.custom-navbar {
+  background: #000000;
+  border: none;
+  margin-bottom: 0;
+  text-align: center;
+  .navbar-nav{
+    margin: 0 0 0 125px;
+  }
+
+  .navbar-brand  {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 11px;
+    .navbar-toggle {
+      background: #ffa400;
+      padding: 4px 6px;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+
+      .icon-bar {
+        background: #ffa400;
+        border-color: transparent;
+      }
+    }
+  }
+  .nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    &:hover {
+      background: transparent;
+      color:#FFE401;
+      border-bottom: 1px solid #FFE401;
+    }
+    &:focus {
+      background-color: transparent;
+      color: #ffffff;
+      outline: none;
+    }
+  }
+  .nav li.active > a {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+
+@media(min-width:768px) {
+
+  .custom-navbar {
+    border-bottom: 1px solid rgba(250,250,250,0.3);
+    padding: 16px;
+    background: black;
+  }
+
+  .custom-navbar.top-nav-collapse {
+    padding: 16px;
+    background: #000000;
+    border-bottom: 0;
+  }
+  .navbar-toggle .icon-bar{
+    background-color: #fff;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .custom-navbar .nav li.active > a {
+    border-bottom: 2px solid transparent !important;
+    color: #ffa400;
+  }
+
+}
+
+
+
+
+/****
+===========================================================
+              Fro About Section
+===========================================================
+***/
+#about{
+  position: relative;
+  overflow: hidden;
+  #aboutTop{
+    margin: 135px 0 85px;
+    overflow: hidden;
+        h2{
+          @include sectionTitleText;
+          font-size: 36px;
+          text-transform: uppercase;
+        }
+      div{
+        margin: 40px 0 75px;
+        p{
+          @include paragraphText;
+        }
+      }
+    .btn-danger{
+      border: none;
+      font-size: 18px;
+      color:#ffe400;
+      padding: 20px 45px;
+      background-color: #000000;
+      margin-right: 40px;
+
+      @include transitionEffect;
+
+      &:hover{
+        @include buttonHoverEffect;
+      }
+    }
+    }
+  #aboutMiddel{
+    .aboutContent{
+      background-color: #212121;
+      @include transitionEffect;
+      margin-bottom: 180px;
+      p{
+        i{
+          color:#ffe400;
+          font-size: 100px;
+          margin: 85px 0 50px;
+        }
+      }
+      h4{
+        color:#ffffff;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 55px 130px;
+      }
+      &:hover{
+        @include buttonHoverEffect;
+        color:#ffffff;
+      }
+      &:hover i{
+        @include transitionEffect;
+        color:#ffffff;
+      }
+    }
+    .awesomFeature{
+      background-color: #212121;
+      @include transitionEffect;
+      p{
+        color:#ffffff;
+        i{
+          color:#ffe400;
+          font-size: 100px;
+          margin: 50px 0;
+        }
+      }
+      h4{
+        color:#ffffff;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding: 0 40px;
+      }
+      .pbottom{
+        padding: 0 40px 45px;
+      }
+      &:hover{
+        @include buttonHoverEffect;
+        color:#ffffff;
+      }
+      &:hover i{
+        @include transitionEffect;
+        color:#ffffff;
+      }
+    }
+  }
+  #aboutBottom{
+    h3{
+      color:#444444;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .counterUp{
+      margin: 120px 0 151px;
+      p{
+        color:#757575;
+        font-size: 13px;
+        margin: 15px 0 0;
+      }
+      h2{
+        color: #444444;
+        font-size: 40px;
+        position: relative;
+        font-weight: bold;
+      }
+      span{
+        color: #444444;
+        font-size: 46px;
+        position: absolute;
+        top: 10px;
+        left: 196px;
+      }
+    }
+  }
+
+  .aboutEnllax{
+    .enllaxImg01{
+      position: absolute;
+      top: 206px;
+      left: -50px;
+      height: 700px;
+      z-index: -1;
+    }
+    .enllaxImg02{
+      position: absolute;
+      top: 63%;
+      right: -15%;
+      z-index: -1;
+    }
+  }
+  .aboutEnllaxText{
+    position: absolute;
+    top: 0;
+    left: 500px;
+    z-index: -1;
+    h1{
+      @include sectionShadowText;
+
+    }
+  }
+}
+
+
+
+
+/****
+===========================================================
+              Fro Responsive Section
+===========================================================
+***/
+#responsive{
+  background-color: $bostBg;
+  position: relative;
+  overflow: hidden;
+  .boostYW{
+    margin: 200px 0 100px;
+    /*position: relative;*/
+    h3{
+      @include sectionTitleText;
+      font-size: 26px;
+      text-transform: uppercase;
+      margin-bottom: -90px;
+    }
+    p{
+      margin: 60px 0;
+    }
+    ul{
+      margin-left: -40px;
+      li{
+        margin-top: 25px;
+        list-style: none;
+        i{
+          color:#757575;
+        }
+      }
+    }
+    .btn-danger{
+      border: 1px solid #444444;
+      font-size: 16px;
+      margin-top: 40px;
+      color:#ffffff;
+      padding: 20px 45px;
+      background-color: #000000;
+      text-transform: uppercase;
+
+      @include transitionEffect;
+
+      &:hover{
+        @include buttonHoverEffect;
+      }
+    }
+  }
+
+  figure img{
+    position: absolute;
+    top: 215px;
+    right: -205px;
+  }
+  .responsiveEnllax{
+    .enllaxImg01{
+      position: absolute;
+      top: 0;
+      left: -70px;;
+    }
+  }
+
+  .responsiveEnllaxText{
+   /* position: absolute;
+    top: 0;
+    left: 0;*/
+    z-index: -1;
+    h1{
+      @include sectionShadowText;
+
+    }
+  }
+}
+
+
+/****
+===========================================================
+              Fro section Marvel
+===========================================================
+***/
+#marvel{
+  background-image: url("../images/marvel/bg.jpg");
+ /* background-size: cover;
+  background-repeat: no-repeat;*/
+  position: relative;
+  @include imageBgParallax;
+  .overlay{
+    background-color: rgba(63, 63, 62, 0.68);
+    padding: 160px 0 130px;
+    figure{
+      figcaption{
+        h2{
+          margin: 40px 0;
+          color: #fdfdfd;
+          font-size: 44px;
+          font-weight: bold;
+          text-transfrom:uppercase;
+        }
+        p{
+          color:#ffffff;
+        }
+        .btn-danger{
+          border: 1px solid #444444;
+          font-size: 16px;
+          margin-top: 40px;
+          margin-left: 40px;
+          color:#ffffff;
+          padding: 20px 45px;
+          background-color: #000000;
+          text-transform: uppercase;
+
+          @include transitionEffect;
+
+          &:hover{
+            @include buttonHoverEffect;
+          }
+        }
+      }
+    }
+  }
+}
+.marvelEnllax{
+  position: absolute;
+  top: 30px;
+  right: -83px;
+  .enllaxImg01{
+      height: 490px;
+  }
+}
+
+
+
+
+/****
+===========================================================
+             for features section
+===========================================================
+***/
+#features{
+  position: relative;
+  overflow: hidden;
+  padding: 170px 0;
+  background-color: $primaryBg;
+  z-index: -1;
+  .featuresWrapper{
+    h3{
+      font-size: 30px;
+      @include sectionTitleText;
+      text-transform: uppercase;
+      margin: 0 0 130px 0;
+    }
+    .featIcon{
+
+      i{
+        width: 66px;
+        border-radius: 50%;
+        height: 65px;
+        font-size: 25px;
+        margin: 0 0 0 -10px;
+        padding: 20px;
+        color:#ffffff;
+      }
+      .fa-lock{background-color:$iconColor1;}
+      .fa-microphone{background-color:$iconColor2;}
+      .fa-laptop{background-color:$iconColor3;}
+      .fa-lightbulb-o{background-color:$iconColor4;}
+      .fa-link{background-color:$iconColor5;}
+      .fa-bell-o{background-color:$iconColor6;}
+      .fa-cog{background-color:$iconColor7;}
+      .fa-paper-plane{background-color:$iconColor8;}
+      .fa-camera{background-color:$iconColor9;}
+    }
+    h4{
+      font-size: 18px;
+      color:#444444;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    p{
+      color:#757575;
+      font-size: 16px;
+      margin-bottom: 70px;
+    }
+  }
+  .featuresEnllaxText{
+    position: absolute;
+    top: 0px;
+    left: 375px;
+    z-index: -1;
+    h1{
+      @include sectionShadowText;
+
+    }
+  }
+}
+
+
+
+
+/****
+===========================================================
+              Fro section Work
+===========================================================
+***/
+#work{
+  padding-top:150px;
+  background-color:#ffe400;
+  position: relative;
+  overflow: hidden;
+  h2{
+    @include sectionTitleText;
+    color:#000000;
+    margin-bottom: 65px;
+    text-transform: uppercase;
+  }
+  .controls{
+    margin-bottom: 50px;
+  }
+  .col-md-3{
+    padding: 0;
+  }
+  .portfolio {
+    overflow: hidden;
+    position: relative;
+    .portfolio-info {
+      background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+      bottom: -50px;
+      height: 50px;
+      left: 0;
+      padding: 15px 0;
+      position: absolute;
+      width: 100%;
+      h3 {
+        color: #444444;
+        font-size: 16px;
+        padding-left: 10px;
+        font-weight: bold;
+        margin-top: 0;
+        text-transform: uppercase;
+        span {
+          color: #757575;
+          font-size: 10px;
+        }
+      }
+    }
+    .searching {
+      background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+      border-radius: 25px;
+      bottom: -42px;
+      height: 40px;
+      padding: 10px 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 100px;
+      span {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #444444;
+        border-radius: 50%;
+        height: 30px;
+        padding: 7px;
+        width: 30px;
+        &:hover {
+          background: #ffe400 none repeat scroll 0 0;
+          transition: all 0.5s ease 0s;
+        }
+      }
+    }
+    &:hover .portfolio-info {
+      bottom: 0;
+      transition: all 0.9s ease 0s;
+    }
+    &:hover .searching {
+      bottom: 33px;
+      transition: all 0.9s ease 0s;
+    }
+  }
+  .btn-danger{
+    border: 1px solid #444444;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 20px;
+    color:#000000;
+   /* padding: 20px 45px;*/
+    background-color: transparent;
+    text-transform: uppercase;
+
+    @include transitionEffect;
+
+    &:hover{
+      background-color: #000000;
+      color:#ffffff;
+    }
+  }
+  .workEnllaxText{
+    position: absolute;
+    top: 0;
+    left: 510px;
+    z-index: 1;
+    h1{
+      @include sectionShadowText;
+      color: #c1b33f;
+    }
+  }
+}
+
+
+/****
+===========================================================
+              Fro section Service
+===========================================================
+***/
+#service{
+  background-color: $primaryBg;
+  position: relative;
+  overflow: hidden;
+  padding-top: 200px;
+  z-index: -1;
+  .serviceRight{
+    img{
+      height: 795px;
+      margin-top: 95px;
+    }
+  }
+  .serviceLeft{
+    h2{
+      margin-bottom: 150px;
+      @include sectionTitleText;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    .cleanDesign{
+      i{
+        font-size: 40px;
+        color:#000000;
+      }
+      h4{
+        margin: 40px 0;
+        @include sectionTitleText;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 16px;
+        color:#757575;
+        padding-bottom: 65px;
+      }
+    }
+    .cleanBorder1{
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .cleanBorder2{
+      border-left: 1px solid #e6e6e6;
+    }
+    .parallaxEffect{
+      i{
+        margin-top: 40px;
+      }
+    }
+    .support{
+      i{
+        margin-top: 40px;
+      }
+    }
+  }
+  .serviceEnllaxText{
+    position: absolute;
+    top: -100px;
+    left: 155px;
+    z-index: -1;
+    h1{
+      @include sectionShadowText;
+
+    }
+  }
+  .serviceEnllax{
+
+    .enllaxImg01{
+      position: absolute;
+      top: 500px;
+      left: -50px;
+    }
+  }
+}
+
+
+
+
+/****
+===========================================================
+              Fro section Pricing
+===========================================================
+***/
+#pricing{
+  @include imageBgParallax;
+  background-image: url("../images/Pricing/bg.jpg");
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  .pricingWrapper{
+    padding: 145px 0 100px;
+    h2{
+      margin: 0 0 130px 0;
+      @include sectionTitleText;
+      text-transform: uppercase;
+      color:#000000;
+      font-size: 30px;
+    }
+    .single-pricing{
+      background: #fff none repeat scroll 0 0;
+      margin-top: 100px;
+      position: relative;
+      .standard {
+        background-image: url("../images/Pricing/img1.jpg");
+        background-position: center center;
+        background-size: cover;
+        padding: 30px 0 42px;
+        h6,h5, p{
+          color: #ffffff;
+        }
+        h6{
+          padding-bottom: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 15px;
+        }
+        h5 span {
+          font-size: 60px;
+          font-weight: 500;
+        }
+      }
+      .premium{
+        background-image: url("../images/Pricing/img2.jpg");
+      }
+      .ultimate{
+        background-image: url("../images/Pricing/img3.jpg");
+      }
+    }
+  }
+  .most-popular {
+    background: #e6e6e6 none repeat scroll 0 0;
+    font-weight: bold;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+  }
+  .single-pricing > ul {
+    list-style: outside none none;
+    padding: 40px 0;
+  }
+  .single-pricing li {
+    border-bottom: 1px solid #f1f1f1;
+    color: #808080;
+    font-size: 15px;
+    padding: 25px 0;
+  }
+  .single-pricing li i {
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  .get-started a {
+    color: #444;
+    font-weight: bold;
+  }
+  .get-started {
+    border-top: 2px solid #f8e32c;
+    padding: 10px 0;
+    a:hover{
+      text-decoration: none;
+    }
+  }
+  .pricingEnllaxText{
+    position: absolute;
+    top: 100px;
+    left: 485px;
+    z-index: -1;
+    h1{
+      @include sectionShadowText;
+      color: #c1b33f;
+
+    }
+  }
+}
+
+
+
+
+
+
+/****
+===========================================================
+              Fro section Expert
+===========================================================
+***/
+#expert{
+  padding: 200px 0 300px;
+  background-color: $primaryBg;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  h2{
+    @include sectionTitleText;
+    color:#000000;
+    font-size: 30px;
+    margin-bottom: 130px;
+    text-transform: uppercase;
+  }
+  .single-expert {
+    position: relative;
+    overflow: hidden;
+    .team-text {
+      background: #ffe400 none repeat scroll 0 0;
+      color: #fff;
+      height: 100%;
+      padding-top: 95px;
+      position: absolute;
+      top: -100%;
+      transition: all 0.9s ease 0s;
+      width: 100%;
+    }
+    &:hover .team-text{
+      top: 0;
+    }
+    .expert-text{
+      background: #ebebeb;
+      padding:15px;
+      h2 {
+        color: #444444;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 5px 0;
+      }
+      h4 {
+        color: #757575;
+        font-weight: 100;
+      }
+    }
+    .expert-separator {
+      border-bottom: 2px dashed #b7b7b7;
+    }
+  }
+  .expert-text > h4 {
+    color: #757575;
+    font-size: 11px;
+    padding-top: 15px;
+  }
+  .team-text > h2 {
+    color: #000000;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .team-text > h4 {
+    font-size: 16px;
+    padding-bottom: 50px;
+    color: #000000;
+  }
+  .team-text > p {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 130px;
+    padding: 0 13px;
+    color: #000000;
+  }
+  .team-social i {
+    color: #6b6000;
+    font-size: 22px;
+    margin: 0 10px;
+  }
+  .team-social {
+    border-top: 1px dashed #eee;
+    padding-top: 20px;
+  }
+}
+
+.expertEnllaxText {
+  position: absolute;
+  top: 0;
+  left: 510px;
+  z-index: -1;
+  h1 {
+    @include sectionShadowText;
+
+  }
+}
+
+
+
+
+/****
+===========================================================
+              Fro impres section
+===========================================================
+***/
+#impress{
+  background-image: url("../images/impress/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  figure{
+    padding: 50px 0;
+    figcaption{
+      h2{
+        margin: 40px 0 15px;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        text-transfrom:uppercase;
+      }
+      p{
+        color:#ffffff;
+      }
+      .btn-danger{
+
+        border: 1px solid #444444;
+        font-size: 16px;
+        margin-top: 40px;
+        margin-left: 20px;
+        color:#ffffff;
+        padding: 20px 45px;
+        background-color: #000000;
+        text-transform: uppercase;
+
+
+        @include transitionEffect;
+
+        &:hover{
+          @include buttonHoverEffect;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/****
+===========================================================
+             for News Section
+===========================================================
+***/
+#news{
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 115px;
+  }
+  padding: 180px 0 160px;
+  .single_blog_img{position:relative;}
+  .single_blog_img a{position:relative;}
+  .single_blog_img a::before {
+    position:absolute;
+    content: "\f04b";
+    background: #FFE400;
+    width: 40px;
+    height: 40px;
+    bottom: 22px;
+    left: 106px;
+    text-align: center;
+    top: 3%;
+    font-family: FontAwesome;
+    color: #000;
+    font-size: 22px;
+    border-radius: 50%;
+    line-height: 39px;
+    transform: translateY(-84%);
+    opacity: 0;
+    transition: .5s;
+    transform: scale(3);
+  }
+  .single_blog_img:hover a::before{opacity:1;transform:scale(1.3)}
+  .single_blog_content:hover a{background:#FFE400;}
+  .single_blog_content h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 30px;
+  }
+  .single_blog_content span {
+    padding: 13px 0 35px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  .single_blog_content p {
+    font-size: 12px;
+    padding: 0px 31px 20px;
+    text-align: left;
+    color: #757575;
+    font-weight: 400;
+  }
+  .single_blog_content a {
+    text-decoration: none;
+    padding: 10px 22px;
+    background: #F9F9F9;
+    border-radius: 23px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+  }
+  .blog_title:hover a {
+    background:#FFE400;
+    transition:.3s;
+    cursor:pointer;
+  }
+
+  .blog_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 36%;
+    z-index:999;
+  }
+  .blog_title a{
+    text-decoration: none;
+    padding: 8px 28px;
+    background: #F9F9F9;
+    border-radius: 23px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;}
+
+
+
+  /* blog_slider_area start */
+
+  .slider-active .owl-nav div {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 47%;
+    background: linear-gradient(transparent, black);
+    text-align: center;
+    padding: 2px 14px;
+    font-size: 25px;
+    font-weight: 700;
+    transform: translateY(-50%);
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+    line-height: 35px;
+  }
+  .slider-active{position:relative;}
+  .slider-active .owl-nav > .owl-next {
+    right: 0;
+  }
+}
+
+.newsEnllaxText{
+  position: absolute;
+  top:100px;
+  left: 495px;
+  z-index: -1;
+  h1{
+    @include sectionShadowText;
+
+  }
+}
+
+
+
+
+/****
+===========================================================
+             for Section Contact
+===========================================================
+***/
+#contact{
+  @include imageBgParallax;
+  background-image: url("../images/contact/bd.jpg");
+  padding: 160px 0 210px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: -40px;
+  }
+  form{
+    input{
+      height:55px;
+    }
+    textarea{
+      height:500px;
+    }
+    .btn-danger{
+      border: 1px solid #444444;
+      font-size: 16px;
+      margin-top: 40px;
+      color:#ffffff;
+      padding: 20px 45px;
+      background-color: #000000;
+      text-transform: uppercase;
+
+
+      @include transitionEffect;
+
+      &:hover{
+        @include buttonHoverEffect;
+      }
+    }
+  }
+}
+
+.err{
+  border-color:#FFE400;
+}
+
+
+/****
+===========================================================
+             for Section Footer
+===========================================================
+***/
+
+#footer{
+  background-color: #212121;
+  padding: 60px 0 65px;
+
+  .row_1{
+    padding-left: 120px;
+    img{
+      padding-left: 55px;
+      padding-bottom: 30px;
+    }
+    p{
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+  .row_2{
+    padding-left: 70px;
+    margin-top: -35px;
+    .fa{
+      color: #fff;
+      padding-top: 55px;
+      padding-right: 15px;
+      &:hover{
+        color: #ffe400;
+
+      }
+    }
+  }
+  .row_3{
+    padding-left: 120px;
+    img{
+      padding-left: 55px;
+      padding-bottom: 30px;
+    }
+    p{
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+  .copyRight{
+    color: #ffffff;
+    margin: 115px 0 -21px 0;
+    span{
+      color:#ffe400;
+    }
+  }
+}
+
+#footer_down {
+  background-color: #2e2d2d;
+  padding: 15px 0 15px;
+}
+
+#footer_down p {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+/****
+===========================================================
+             for Scroll Up
+===========================================================
+***/
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.scrollup {
+  width:40px;
+  height:40px;
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  z-index: 99;
+  text-align: center;
+  color: #fff;
+  background: #FFE401;
+  border-radius: 50%;
+  font-size: 25px;
+  display: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #FFE401;
+    border-radius: 50%;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    -webkit-animation: hvr-ripple-out 1.2s ease-in-out infinite;
+    animation: hvr-ripple-out 1.2s ease-in-out infinite;
+  }
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+  }
+  i {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #212121;
+  }
+}
+
+/****
+===========================================================
+             ScrollBar
+===========================================================
+***/
+#scrollbubble {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  z-index: 500;
+  padding: 3px 8px;
+  background-color: #000;
+  color: #FFF;
+  border-radius: 3px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    height: 0;
+    width: 0;
+    margin-top: -4px;
+    border: 4px solid transparent;
+    border-left-color: #000;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFE401;
+  outline: 1px solid slategrey;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
